@@ -1,0 +1,130 @@
+[
+    {
+        "Plot": "You have just started the semester and you're a first-year and you’re out of state",
+        "Choices":{
+            "A":{"Text":"Read the syllabus","Point":1},
+            "B":{"Text":"Go to first-year events","Point":1},
+            "C":{"Text":"Buy snacks and eat out","Point":1},
+            "D":{"Text": "Show your status","Action":"Status"}
+        },
+        "Notes": "Plot then it moves into the choices which is another dictonary in choices every key(choice) has a dictonary with the text associated and a point as well"
+    },
+    
+    {
+        "Plot": "You’ve gotten used to classes and now you’re interested in clubs activities outside of classe",
+        "Choices":{
+            "A":{"Text":"Go to the first look fair","Point":1},
+            "B":{"Text":"Find a job","Point":1},
+            "C":{"Text":"Drop class","Action":"Exit Game","Reason":"You've withdrawn from the class"},
+            "D":{"Text": "Show your status","Action":"Status"}
+        }
+        
+    },
+    {
+        "Plot": "The semester has gotten heated balance your campus life is a lot harder than you thought",
+        "Choices":{
+            "A":{"Text":"Create a study plan","Point":1},
+            "B":{"Text":"Start going to office hours","Point":1},
+            "C":{"Text":"Go Party","Point":1},
+            "D":{"Text": "Show your status","Action":"Status"}
+        }
+    },
+    {
+        "Plot": "First exam week what do you do",
+        "Choices":{
+            "A":{"Text":"Last minute studying","Point":1},
+            "B":{"Text":"Follow your study plan","Point":1},
+            "C":{"Text":"Dream your test away","Point":1},
+            "D":{"Text": "Show your status","Action":"Status"}
+        }
+    },
+    {
+        "Plot": "You have completed your first exam at college you realized you did poorly",
+        "Choices":{
+            "A":{"Text":"Ride the curve","Point":1},
+            "B":{"Text":"Complain to the class in the group chat","Point":1},
+            "C":{"Text":"Go to office hours","Point":1},
+            "D":{"Text": "Show your status","Action":"Status"}
+        }
+    },
+    {
+        "Plot": "You've settled in and its parents weekend",
+        "Choices":{
+            "A":{"Text":"Go to club meet or event","Point":1},
+            "B":{"Text":"Get work done in advance","Point":1},
+            "C":{"Text":"Tell your parents about your grades","Point":1},
+            "D":{"Text": "Show your status","Action":"Status"}
+        }
+        
+    },
+    {
+        "Plot": "Midterms are coming",
+        "Choices":{
+            "A":{"Text":"Go to homecoming football game","Point":1},
+            "B":{"Text":"Go to the library to go study","Point":1},
+            "C":{"Text":"Go to office hours","Point":1},
+            "D":{"Text": "Show your status","Action":"Status"}
+        }
+    },
+    {
+        "Plot": "Your midterm is on Monday, you’re sick cuz you drank too much over the weekend what do you do",
+        "Choices":{
+            "A":{"Text":"Plan a halloween party","Point":1},
+            "B":{"Text":"Go to the health center to get a note","Point":1},
+            "C":{"Text":"Don't show up","Point":1},
+            "D":{"Text": "Show your status","Action":"Status"}
+        }
+    },
+    {
+        "Plot": "The stress has gotten to you",
+        "Choices":{
+            "A":{"Text":"Skip classes","Point":1},
+            "B":{"Text":"Go to the counseling center","Point":1},
+            "C":{"Text":"Go to the library to pet puppies","Point":1},
+            "D":{"Text": "Show your status","Action":"Status"}
+        }
+    },
+    {
+        "Plot": "You realize you’re failing and you have talked to your professor, your chances of passing are slim make your choice",
+        "Choices":{
+            "A":{"Text":"Study extra hard","Point":1},
+            "B":{"Text":"Drop the class with a W","Action":"Exit Game", "Reason":"You've withdrawn from the class"},
+            "C":{"Text":"Go binge drink at the bar","Point":1},
+            "D":{"Text": "Show your status","Action":"Status"}
+        }
+        
+    },
+    {
+        "Plot": "It’s Thanksgiving when you go home are you going to study? Yes or No",
+        "Choices":{
+            "Y":{"Text":"Yes","Point":1},
+            "N":{"Text":"No","Action":"Exit Game","Reason":"The midterm was the Monday after. You've failed your class."}
+        }
+    },
+    {
+        "Plot": "Last midterm",
+        "Choices":{
+            "A":{"Text":"Panic","Point":1},
+            "B":{"Text":"Study Study Study","Point":1},
+            "C":{"Text":"Go Party","Point":1},
+            "D":{"Text": "Show your status","Action":"Status"}
+        }
+    },
+    {
+        "Plot": "Preparing for finals week",
+        "Choices":{
+            "A":{"Text":"Go to the basketball game","Point":1},
+            "B":{"Text":"Make a finals study plan","Point":1},
+            "C":{"Text":"Go party","Point":1},
+            "D":{"Text": "Show your status","Action":"Status"}
+        }
+    },
+    {
+        "Plot": "IT'S FINALS WEEK",
+        "Choices":{
+            "A":{"Text":"Sleep through finals","Action":"Exit Game","Reason":"You obviously failed nitwit"},
+            "B":{"Text":"Take your finals","Point":1},
+            "C":{"Text": "Show your status","Action":"Status"}
+        }
+    }
+]
