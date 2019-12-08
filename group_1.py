@@ -68,7 +68,7 @@ class TestFunctions(unittest.TestCase):
         with self.assertRaises (NotImplementedError):
             GameClass().methodToRaise(NotImplementedError)
             
-    def test():
+  
 
 # main test procedure 
 # user starts program and should be prompted for their name 
