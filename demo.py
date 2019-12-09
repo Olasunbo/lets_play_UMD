@@ -156,10 +156,9 @@ def main(name):
     time.sleep(7)
     print("NOW LET'S PLAY\n")  
     print("good luck %s ..... (you might need it)\n" % (name))
-    g = Game('complete.json')
     
-    print("You got a %s" % (grade('demo.json')))
-    
+    print("Congrats you got a %s" % (grade('demo.json')))
+    time.sleep(1)
 
     
 if __name__ == "__main__":
