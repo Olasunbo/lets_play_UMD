@@ -1,0 +1,59 @@
+[
+    {
+        "Plot": "You have just started the semester and you're a first-year and you’re out of state",
+        "Choices":{
+            "A":{"Text":"Read the syllabus","Point":40},
+            "B":{"Text":"Go to first-year events","Point":15},
+            "C":{"Text":"Buy snacks and eat out","Point":0},
+            "D":{"Text": "Show your status","Action":"Status"}
+        },
+        "Notes": "Plot then it moves into the choices which is another dictonary in choices every key(choice) has a dictonary with the text associated and a point as well"
+    },
+
+    {
+        "Plot": "First exam week what do you do",
+        "Choices":{
+            "A":{"Text":"Last minute studying","Point":5},
+            "B":{"Text":"Follow your study plan","Point":20},
+            "C":{"Text":"Dream your test away","Point":0},
+            "D":{"Text": "Show your status","Action":"Status"}
+        }
+    },
+ 
+    {
+        "Plot": "You've settled in and its parents weekend",
+        "Choices":{
+            "A":{"Text":"Go to club meet or event","Point":10},
+            "B":{"Text":"Get work done in advance","Point":15},
+            "C":{"Text":"Tell your parents about your grades","Point":5},
+            "D":{"Text": "Show your status","Action":"Status"}
+        }
+        
+    },
+
+    {
+        "Plot": "The stress has gotten to you",
+        "Choices":{
+            "A":{"Text":"Skip classes","Point":0},
+            "B":{"Text":"Go to the counseling center","Point":15},
+            "C":{"Text":"Go to the library to pet puppies","Point":10},
+            "D":{"Text": "Show your status","Action":"Status"}
+        }
+    },
+    {
+        "Plot": "It’s Thanksgiving when you go home are you going to study? Yes or No",
+        "Choices":{
+            "Y":{"Text":"Yes","Point":20},
+            "N":{"Text":"No","Action":"Exit Game","Reason":"The midterm was the Monday after. You've failed your class."}
+        }
+    },
+
+    {
+        "Plot": "IT'S FINALS WEEK",
+        "Choices":{
+            "A":{"Text":"Sleep through finals","Action":"Exit Game","Reason":"You obviously failed nitwit"},
+            "B":{"Text":"Take your finals","Point":5},
+            "C":{"Text": "Show your status","Action":"Status"}
+        }
+    }
+]
