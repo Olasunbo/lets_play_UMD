@@ -158,7 +158,7 @@ def main(name):
     print("good luck %s ..... (you might need it)\n" % (name))
     g = Game('complete.json')
     
-    print("You got a %s" % (grade('complete.json')))
+    print("You got a %s" % (grade('demo.json')))
     
 
     
@@ -166,7 +166,7 @@ if __name__ == "__main__":
     arguments = len(sys.argv) - 1
     position = 1
     while (arguments >= position):
-        print ("parameter %i: %s" % (position, sys.argv[position]))
+        print ("Player %i: %s" % (position, sys.argv[position]))
         position = position + 1
     main(sys.argv[1:])
 	
