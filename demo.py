@@ -69,7 +69,7 @@ class Game:
                     if "Action" in choices[answer]:
                         if choices[answer]["Action"] == "Status":
                             self.status()
-                            time.sleep(2)
+                            time.sleep(5)
                         elif choices[answer]["Action"] == "Exit Game":
                             print(choices[answer]["Reason"])
                             #make reason key in json file
