@@ -5,7 +5,7 @@
             "A":{"Text":"Read the syllabus","Point":40},
             "B":{"Text":"Go to first-year events","Point":15},
             "C":{"Text":"Buy snacks and eat out","Point":0},
-            "D":{"Text": "Show your status","Action":"Status"}
+            "D":{"Text": "Show your status","Action":"Status","Reason":" "}
         },
         "Notes": "Plot then it moves into the choices which is another dictonary in choices every key(choice) has a dictonary with the text associated and a point as well"
     },
@@ -26,7 +26,7 @@
             "A":{"Text":"Go to club meet or event","Point":10},
             "B":{"Text":"Get work done in advance","Point":15},
             "C":{"Text":"Tell your parents about your grades","Point":5},
-            "D":{"Text": "Show your status","Action":"Status"}
+            "D":{"Text": "Show your status","Action":"Status","Reason":" "}
         }
         
     },
@@ -37,7 +37,7 @@
             "A":{"Text":"Skip classes","Point":0},
             "B":{"Text":"Go to the counseling center","Point":15},
             "C":{"Text":"Go to the library to pet puppies","Point":10},
-            "D":{"Text": "Show your status","Action":"Status"}
+            "D":{"Text": "Show your status","Action":"Status","Reason":" "}
         }
     },
     {
@@ -53,7 +53,7 @@
         "Choices":{
             "A":{"Text":"Sleep through finals","Action":"Exit Game","Reason":"You obviously failed nitwit"},
             "B":{"Text":"Take your finals","Point":5},
-            "C":{"Text": "Show your status","Action":"Status"}
+            "C":{"Text": "Show your status","Action":"Status","Reason":" "}
         }
     }
 ]
