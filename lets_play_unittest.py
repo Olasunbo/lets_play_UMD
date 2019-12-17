@@ -1,16 +1,15 @@
 import unittest 
 import math
-import final
+import final 
 
 class TestGame(unittest.TestCase):
-    
+        
     def test_init(self):
         pass
         
         
     def test_stats(self):
         pass
-        
     def test_storyline(self):
         pass
         
@@ -29,13 +28,10 @@ class TestGame(unittest.TestCase):
         self.assertTrue(gc.sanitize(self,"no").isupper())
         self.assertEqual(gc.sanitize(self,'no').upper(), "N")
         
-class TestFunctions:
-    
-    def test_sanitize(self):
-        pass
-            
     def test_status(self):
         pass
+        
+class TestFunctions:
         
     def test_grade(self):
         pass
