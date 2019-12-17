@@ -1,15 +1,21 @@
 import unittest 
 import math
-import final 
+import final
 
 class TestGame(unittest.TestCase):
+    
+    def test_init(self, file):
+        """ Test whether init method sets attributes correctly."""
+        self.assertIsInstance(self.demo.Game)
+        self.assertEqual (player_points = 0)
+        self.assertEqual (month = 1)
+        self.assertEqual (week = 14) 
         
-    def test_init(self):
-        pass
-        
-        
-    def test_stats(self):
-        pass
+    def test_stats(self, points):
+        self.assertEqual (self.month = 1 if self.week >= 1 and <= 4)
+        self.assertEqual (self.month = 2 if self.week >= 5 and <= 8)
+        self.assertEqual (self.month = 3 if self.week >= 9 and <= 12)
+          
     def test_storyline(self):
         pass
         
@@ -31,10 +37,7 @@ class TestGame(unittest.TestCase):
     def test_status(self):
         pass
         
-<<<<<<< HEAD
-=======
         
->>>>>>> 37da33b822da55d39914b565d653436498d336be
 class TestFunctions:
         
     def test_grade(self):
@@ -56,6 +59,6 @@ class TestFunctions:
         pass
 
 if __name__ == "__main__":
-    unittest.main()        
+    unittest.main()   
 
     
