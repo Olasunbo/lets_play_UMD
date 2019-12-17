@@ -31,10 +31,26 @@ class TestGame(unittest.TestCase):
     def test_status(self):
         pass
         
+<<<<<<< HEAD
+=======
+        
+>>>>>>> 37da33b822da55d39914b565d653436498d336be
 class TestFunctions:
         
     def test_grade(self):
-        pass
+        
+        self.g = final.Game()
+        self.r1 = 95
+        self.r2 = 55
+        self.assertEqual(self.g.playerpoints,self.r1)
+        self.assertTrue(self.grade(story).resutlt, self.g.playerpoints)
+        self.assertTrue(self.grade(story), is str)
+        self.assertEqual(self.grade(story), "A")
+        self.assertEqual(self.g.playerpoints,self.r2)
+        self.assertTrue(self.grade(story).resutlt, self.g.playerpoints)
+        self.assertTrue(self.grade(story), is str)
+        self.assertEqual(self.grade(story), "F")
+        
         
     def test_main(self):
         pass
