@@ -1,29 +1,49 @@
 import unittest 
+import math
+import final
 
-import demo
-
-class TestGame(unittest.Testcase):
+class TestGame(unittest.TestCase):
     
-    def test_init(self, file):
+    def test_init(self):
+        pass
         
         
-    def test_stats(self, points):
+    def test_stats(self):
+        pass
         
     def test_storyline(self):
+        pass
         
     def test_reaction(self):
+        pass
         
     def test_event(self):
+        pass
+    
+    def test_sanitize(self):
+        
+        gc = final.Game
+        
+        self.assertTrue(gc.sanitize(self,"yes").isupper())
+        self.assertEqual(gc.sanitize(self,'yes').upper(), "Y")
+        self.assertTrue(gc.sanitize(self,"no").isupper())
+        self.assertEqual(gc.sanitize(self,'no').upper(), "N")
         
 class TestFunctions:
     
-    def test_sanitize(self, answer):
-        
+    def test_sanitize(self):
+        pass
+            
     def test_status(self):
+        pass
         
-    def test_grade(story):
+    def test_grade(self):
+        pass
         
-    def test_main(name):
-        
-        
+    def test_main(self):
+        pass
+
+if __name__ == "__main__":
+    unittest.main()        
+
     
