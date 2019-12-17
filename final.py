@@ -19,8 +19,7 @@ class Game:
                 and read in story 
 		Args:
 			name(str): the user’s name
-		Raise:
-			TypeError: if the input for file is not a string 
+ 
 		"""
         with open(file,encoding="utf-8")as f:
             self.stories = json.load(f)

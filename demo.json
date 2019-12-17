@@ -16,7 +16,7 @@
             "A":{"Text":"Last minute studying","Point":5},
             "B":{"Text":"Follow your study plan","Point":20},
             "C":{"Text":"Dream your test away","Point":0},
-            "D":{"Text": "Show your status","Action":"Status"}
+            "D":{"Text": "Show your status","Action":"Status","Reason":" "}
         }
     },
  

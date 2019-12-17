@@ -79,7 +79,7 @@ class Game:
                         self.stats(choices[answer]["Point"])
                         break            
                     
-    def sanitize(self,answer): #finished
+    def sanitize(self,answer):
         correct = answer.upper()
         if correct == "YES":
             correct = "Y"
