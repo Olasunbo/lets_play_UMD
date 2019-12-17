@@ -29,16 +29,26 @@ class TestGame(unittest.TestCase):
         self.assertTrue(gc.sanitize(self,"no").isupper())
         self.assertEqual(gc.sanitize(self,'no').upper(), "N")
         
-class TestFunctions:
-    
-    def test_sanitize(self):
-        pass
-            
     def test_status(self):
         pass
         
+        
+class TestFunctions:
+        
     def test_grade(self):
-        pass
+        
+        self.g = final.Game()
+        self.r1 = 95
+        self.r2 = 55
+        self.assertEqual(self.g.playerpoints,self.r1)
+        self.assertTrue(self.grade(story).resutlt, self.g.playerpoints)
+        self.assertTrue(self.grade(story), is str)
+        self.assertEqual(self.grade(story), "A")
+        self.assertEqual(self.g.playerpoints,self.r2)
+        self.assertTrue(self.grade(story).resutlt, self.g.playerpoints)
+        self.assertTrue(self.grade(story), is str)
+        self.assertEqual(self.grade(story), "F")
+        
         
     def test_main(self):
         pass
