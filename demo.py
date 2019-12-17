@@ -168,5 +168,3 @@ if __name__ == "__main__":
         print ("Player %i: %s" % (position, sys.argv[position]))
         position = position + 1
     main(sys.argv[1:])
-	
-

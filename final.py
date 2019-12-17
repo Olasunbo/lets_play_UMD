@@ -49,16 +49,25 @@ class Game:
     
 
     def storyline(self): 
-        """Gives storyline to guide player on making decisions """
+        """Gives storyline to guide player on making decisions
+        Return:
+            the game plot 
+        """
         for story in self.stories:
+            situation = story['Plot']
             print(story['Plot'])
             print()#prints newline
             time.sleep(1)
             choices = story['Choices']#made a refrence to the dict choices
-            self.event(choices)
+            self.event(choices,situation)
                     
     
-    def event(self, choices):
+    def event(self, choices, situation):
+        """Offers choices to the story and acts on them
+        Args:
+            choices(dict): a list of actions for the current situatuion
+            situation(dict): the current plot
+        """
         while True: #until made a valid choice could be a function
             for choice in choices:
                 #print the choice variable (the key in choices and called the 
@@ -72,24 +81,40 @@ class Game:
             else:
                 if "Action" in choices[answer]:
                     act = choices[answer]["Action"]
-                    self.reaction(act, answer)
+                    why = choices[answer]["Reason"]
+                    self.reaction(act,why)
+                    print()
+                    print(situation)
+                    print()
                 else:
                     self.stats(choices[answer]["Point"])
                     break 
             
                         
     def reaction(self, action, answer):
-        choices = self.stories['Choices']
+        """ Reacts to choice if there is an action 
+        Args:
+            action: key in choice dictonary with the assigned action
+            answer: reasoning for action
+        Return:
+            reason for chioce (if there is one)
+        """
         if action == "Status":
             self.status()
             time.sleep(5)
         elif action == "Exit Game":
-            print(choices[answer]["Reason"])
+            print(answer)
             time.sleep(1)
             exit() 
             
                     
-    def sanitize(self,answer): 
+    def sanitize(self,answer):
+        """ Corrects user input
+        Args:
+            answer(str): user input 
+        Return:
+            sanitized answer 
+        """ 
         correct = answer.upper()
         if correct == "YES":
             correct = "Y"
@@ -145,8 +170,7 @@ def grade(story):
 def main(name):
     """ Executes the program
     Returns:	
-		Grade(str): the letter grade determined from the grade method 
-		points(int): the amounts points at the end of the game 
+		Name(str): players name 
 	"""
     print("Welcome To Let's Play UMD")
     
