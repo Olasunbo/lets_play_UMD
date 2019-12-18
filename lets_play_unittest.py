@@ -7,21 +7,28 @@ class TestGame(unittest.TestCase):
     def test_init(self, file):
         """ Test whether init method sets attributes correctly."""
         self.assertIsInstance(self.demo.Game)
-        self.assertEqual (player_points = 0)
-        self.assertEqual (month = 1)
-        self.assertEqual (week = 14) 
+        self.assertEqual(player_points = 0)
+        self.assertEqual(month = 1)
+        self.assertEqual(week = 14) 
         
     def test_stats(self, points):
-        self.assertEqual (self.month = 1 if self.week >= 1 and <= 4)
-        self.assertEqual (self.month = 2 if self.week >= 5 and <= 8)
-        self.assertEqual (self.month = 3 if self.week >= 9 and <= 12)
+        self.assertEqual(self.month = 1 if self.week >= 1 and <= 4)
+        self.assertEqual(self.month = 2 if self.week >= 5 and <= 8)
+        self.assertEqual(self.month = 3 if self.week >= 9 and <= 12)
           
     def test_storyline(self):
         pass
         
     def test_reaction(self):
-        pass
+        react1 = final.Game.reaction(self, "D", "Status")
+        react2 = final.Game.reaction(self, "D", "Exit Game" )
         
+        with self.assertRaises(ValueError):
+            react1
+            
+        with self.assertRaises(ValueError):
+            react2
+            
     def test_event(self):
         pass
     
@@ -35,7 +42,11 @@ class TestGame(unittest.TestCase):
         self.assertEqual(gc.sanitize(self,'no').upper(), "N")
         
     def test_status(self):
-        pass
+        
+        gc = final.Game 
+        
+        self.assertEqual(self.remaining, self.week*7)
+        
         
         
 class TestFunctions:
