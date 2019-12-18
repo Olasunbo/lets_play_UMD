@@ -1,5 +1,6 @@
 import unittest 
 import math
+import time
 import final
 
 class TestGame(unittest.TestCase):
@@ -15,9 +16,6 @@ class TestGame(unittest.TestCase):
         self.assertEqual(self.month = 1 if self.week >= 1 and <= 4)
         self.assertEqual(self.month = 2 if self.week >= 5 and <= 8)
         self.assertEqual(self.month = 3 if self.week >= 9 and <= 12)
-          
-    def test_storyline(self):
-        pass
         
     def test_reaction(self):
         react1 = final.Game.reaction(self, "D", "Status")
@@ -28,9 +26,6 @@ class TestGame(unittest.TestCase):
             
         with self.assertRaises(ValueError):
             react2
-            
-    def test_event(self):
-        pass
     
     def test_sanitize(self):
         
@@ -67,7 +62,18 @@ class TestFunctions:
         
         
     def test_main(self):
-        pass
+        print "Start : %s" % time.ctime()
+        time.sleep( 2 )
+        print "End : %s" % time.ctime()
+        print "Start : %s" % time.ctime()
+        time.sleep( 3 )
+        print "End : %s" % time.ctime()
+        print "Start : %s" % time.ctime()
+        time.sleep( 7 )
+        print "End : %s" % time.ctime()
+        print "Start : %s" % time.ctime()
+        time.sleep( 1 )
+        print "End : %s" % time.ctime()
 
 if __name__ == "__main__":
     unittest.main()   
